@@ -19,8 +19,9 @@ BUCKET_NAME = "photo-details-2021"
 
 To Run
 -------
-```pip3.6 install -r requirements.txt
-   python3.6 photo_details.py
+```
+pip3.6 install -r requirements.txt
+python3.6 photo_details.py
 ```
 
 
