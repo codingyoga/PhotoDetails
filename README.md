@@ -17,9 +17,14 @@ SECRET_KEY = ""
 BUCKET_NAME = "photo-details-2021"
 ```
 
-To Run
+To Run 
 -------
+
 ```
+pip3.6 install virtualenv
+virtualenv photo_details
+source photo_details/bin/activate
+
 pip3.6 install -r requirements.txt
 python3.6 photo_details.py
 ```
