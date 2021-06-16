@@ -27,7 +27,9 @@ python3.6 photo_details.py
 
 Testing - To run pytest in docker
 -------
+```
 make test 
+```
 
 
 Output
