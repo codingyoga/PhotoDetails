@@ -19,7 +19,10 @@ BUCKET_NAME = "photo-details-2021"
 
 To Run
 -------
-make run
+- download the repository 
+```pip3.6 install -r requirements.txt
+   python3.6 photo_details.py```
+
 
 
 Testing - To run pytest in docker
@@ -40,4 +43,5 @@ Pytest and Test Coverage
 Troubleshooting
 -------
 - if ```make: *** [test] Error 1``` Please set SECRET_KEY and ACCESS_KEY in settings.py.
+- python version used is 3.6
 
