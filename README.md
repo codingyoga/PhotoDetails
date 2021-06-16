@@ -22,7 +22,7 @@ To Run
 make run
 
 
-Testing
+Testing - To run pytest in docker
 -------
 make test 
 
@@ -36,4 +36,8 @@ Pytest and Test Coverage
 --------
 ![image](https://github.com/codingyoga/PhotoDetails/blob/f23397c2d29ab93458e293d705a2f75b9554d687/screenshots/testcases%20and%20coverage.png)
 
+
+Troubleshooting
+-------
+- if ```make: *** [test] Error 1``` Please set SECRET_KEY and ACCESS_KEY in settings.py.
 
