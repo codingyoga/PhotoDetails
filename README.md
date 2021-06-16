@@ -19,10 +19,9 @@ BUCKET_NAME = "photo-details-2021"
 
 To Run
 -------
-- download the repository 
 ```pip3.6 install -r requirements.txt
-   python3.6 photo_details.py```
-
+   python3.6 photo_details.py
+```
 
 
 Testing - To run pytest in docker
