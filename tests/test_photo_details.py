@@ -5,6 +5,8 @@ import csv
 import uuid
 import datetime
 import pytest
+import boto3
+import settings
 
 @pytest.fixture(scope="module")
 def shared_tsv_file():
@@ -35,7 +37,15 @@ def test_filename(shared_tsv_file):
     assert datetime.datetime.strptime(actual_file_format[1], '%Y-%m-%d')
     assert uuid.UUID(actual_file_format[2])
     
-    
+def test_file_upload_to_s3(shared_tsv_file):
+    tsv_file = shared_tsv_file
+    s3_client = boto3.client('s3', aws_access_key_id =settings.ACCESS_KEY,
+    aws_secret_access_key=settings.SECRET_KEY)
+    try:
+        response = s3_client.get_object(Bucket=settings.BUCKET_NAME,Key=tsv_file)
+    except:
+        response = None
+    assert response != None
 
 
 
