@@ -13,7 +13,9 @@ Add your ACCESS_KEY and SECRET_KEY in settings.py
 ```
 ACCESS_KEY = ""
 SECRET_KEY = ""
-
+```
+Change bucket name in settings.py
+```
 BUCKET_NAME = "photo-details-2021"
 ```
 
